@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="./styler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar container flex">
+            <h2 class="logo"><a href="#homepage">Raju Sharma</a></h2>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-links flex">
+                <!-- <li><a href="#homepage">Homepage</a></li> -->
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Services</a></li>
+                <li><a href="#section3">Skills</a></li>
+                <li><a href="#section4">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- First Section -->
+        <section id="section1" class="reveal">
+            <div class="container flex-content">
+                <div class="text-content">
+                    <h1>Home</h1>
+                    <p>Welcome to our website! We offer the best services tailored to your needs.</p>
+                    <p>Explore our offerings and learn more about us below.</p>
+                </div>
+                <div class="image-content">
+                    <img src="./imagew.webp" alt=" Image">
+                    <img src="./home.webp" alt="Additional Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Section -->
+        <section id="section2" class="fade-in-left">
+            <div class="container flex-content">
+                <div class="image-content">
+                    <img src="./image2.webp" alt="Service Image">
+                    <img src="./services.webp" alt="Additional Service Image">
+                </div>
+                <div class="text-content">
+                    <h1>Services</h1>
+                    <p>Our services are designed to meet your requirements.</p>
+                    <p>Customer satisfaction is our top priority.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Section -->
+        <section id="section3" class="fade-in-right">
+            <div class="container flex-content">
+                <div class="text-content">
+                    <h1>Skills</h1>
+                    <p>We possess a diverse set of skills to help achieve your goals.</p>
+                    <p>Our team excels in both technical and creative domains.</p>
+                </div>
+                <div class="image-content">
+
+                    <img src="./Parallax_Effect.webp" alt="Additional Skills Image">
+                    <img src="./design.webp" alt="Skills Image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="section4">
+        <div class="footer-container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </footer>
+
+    <footer class="rights">
+        
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>
